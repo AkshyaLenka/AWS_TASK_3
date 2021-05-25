@@ -1,0 +1,23 @@
+Task-3 Description-
+1.Create an AWS EC2 instance
+2.Configure the instance with Apache Webserver.
+3.Download php application name “WordPress””.
+4.As wordpress stores data at the backend in MySQL
+5.Database server. Therefore, you need to setup a MySQL server using AWS RDS service using Free Tier.
+6.Provide the endpoint/connection string to the
+WordPress application to make it work.
+So here are the Steps-
+
+Step 1: Write the code or download the repository from github and then log on to AWS management console. Select CloudFormation service.
+
+Step 2: Click on create a stack and then click on upload the file for the template. Then upload the file downloaded from GitHub.
+
+Step 3: Enter the parameters required and then click on next.
+
+Step 4: After entering the parameters click on Next and then create stack.
+
+This will create a stack and you will land on this page.
+
+Step 5: Now head over to EC2 and then SSH into the instance launched. In this instance install apache webserver , php and WordPress. Copy all the WordPress files into /var/www/html. After this rename the file wp-config-sample.php as wp-config.php. This file contains the following:
+
+Now enter the Database name, username and the password entered and the endpoint of the RDS database instance in this file.
